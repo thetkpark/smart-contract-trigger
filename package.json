@@ -1,0 +1,17 @@
+{
+  "name": "smart-contract-trigger",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/thetkpark/smart-contract-trigger.git",
+  "author": "Sethanant Pipatpakorn <sethanant.p@icloud.com>",
+  "license": "MIT",
+  "scripts": {
+    "cscms-lottery": "node src/cscms-lottery.js"
+  },
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.4.0",
+    "dayjs": "^1.10.5",
+    "dotenv": "^10.0.0",
+    "web3": "^1.3.6"
+  }
+}
