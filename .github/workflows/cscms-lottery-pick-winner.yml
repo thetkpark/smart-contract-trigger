@@ -9,6 +9,10 @@ on:
 jobs:
   pick-winner:
     runs-on: ubuntu-latest
+    env:
+      CSCMS_LOTTERY_ADDRESS: ${{ secrets.CSCMS_LOTTERY_ADDRESS }}
+      CSCMS_LOTTERY_MNEMONIC: ${{ secrets.CSCMS_LOTTERY_MNEMONIC }}
+      CSCMS_LOTTERY_PROVIDER_ENDPOINT: ${{ secrets.CSCMS_LOTTERY_PROVIDER_ENDPOINT }}
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js 14.x
