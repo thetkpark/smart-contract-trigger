@@ -3,6 +3,7 @@
 name: cscms-lottery-pick-winner
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: '40 8 * * *'
 
