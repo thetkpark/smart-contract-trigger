@@ -26,4 +26,7 @@ const trigger = async () => {
 
 trigger()
 	.then(() => console.log("DONE triggering pick winner"))
-	.catch((err) => console.log(err))
+	.catch((err) => {
+		console.error(err)
+		process.exit(1)
+	})
